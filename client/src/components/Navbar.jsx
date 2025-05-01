@@ -2,14 +2,15 @@ import React from 'react';
 import { User } from 'lucide-react';
 import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 import Login from './Login';
+import Logo from './../assets/logo.png'
 
 const Navbar = () => {
   return (
     <nav className="bg-pink-50 shadow-sm border-b border-pink-200">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center">
-          <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
+       
+        <div className="flex items-center h-10 w-10">
+          <img src={Logo} alt="Logo" className="" />
         </div>
 
         {/* Navigation Links */}
